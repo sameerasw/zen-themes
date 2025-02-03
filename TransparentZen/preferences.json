@@ -1,0 +1,6 @@
+{
+  "property": "browser.tabs.allow_transparent_browser",
+  "label": "Allow zen browser to be transparent",
+  "type": "checkbox",
+  "defaultvalue": true
+}
