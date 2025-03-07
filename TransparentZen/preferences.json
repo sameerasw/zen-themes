@@ -22,5 +22,17 @@
     "label": "Set bg image url",
     "type": "string",
     "defaultvalue": ""
+  },
+  {
+    "property": "mod.sameerasw.zen_light_tint_disabled",
+    "label": "Disable light tint for Zen after 1.8b",
+    "type": "checkbox",
+    "defaultvalue": true
+  },
+  {
+    "property": "mod.sameerasw.zen_empty_page_transparency",
+    "label": "Make the empty page transparent after Zen 1.9b",
+    "type": "checkbox",
+    "defaultvalue": true
   }
 ]

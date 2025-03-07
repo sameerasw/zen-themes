@@ -1,0 +1,9 @@
+# macos
+.DS_Store
+.AppleDouble
+
+# windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
