@@ -13,7 +13,7 @@
   },
   {
     "property": "mod.sameerasw.zen_bg_img_enabled",
-    "label": "Enable custom background image for Zen",
+    "label": "Enable custom background image for Zen empty page",
     "type": "checkbox",
     "defaultvalue": false
   },
