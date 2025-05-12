@@ -49,10 +49,10 @@ Website specific transparency need to be achieved with the [Zen Internet addon](
 
      ![CleanShot 2025-05-03 at 5  20 16](https://github.com/user-attachments/assets/7302f58c-ff66-40a7-9b38-2b5adc456772)
 
-8. `"no tab screen background image"` - Allows you to add a custom background image or a logo for the boring screen when no tabs are opened or active. Better to use local images to reduce loading delay and when changing the image, use the full css url() selector with the link [`url('example.com/1.png')`]. For Windows, `file:///` prefix might be necessary `url('file:///C:/Users/Moham/Pictures/topography-black.jpeg')`
-          - You can customize the image size, opacity too.
-          - You can also grayscale the image and make it flip the color in light theme as well.
-          - For flipping colors, better to use a white png icon.
+8. `"no tab screen background image"` - Allows you to add a custom background image or a logo for the boring screen when no tabs are opened or active. Better to use local images to reduce loading delay and when changing the image, use the full css url() selector with the link `url('example.com/1.png')`. For Windows, `file:///` prefix might be necessary `url('file:///C:/Users/mom/Pictures/topography-black.jpeg')` for example.
+   - You can customize the image size, opacity too.
+   - You can also grayscale the image and make it flip the color in light theme as well.
+   - For flipping colors, better to use a white png icon.
 
    ![CleanShot 2025-05-11 at 5  43 50@2x](https://github.com/user-attachments/assets/0348f3d3-f4ca-4245-98ae-5c44d15e596e)
 
