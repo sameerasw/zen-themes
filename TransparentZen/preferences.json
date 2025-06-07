@@ -106,27 +106,16 @@
     "defaultValue": false
   },
   {
-    "property": "mod.sameerasw_zen_notab_img_filter",
-    "label": "🖼️ No tab screen image filter",
-    "type": "dropdown",
-    "placeholder": "Select an option",
-    "options": [
-      {
-        "label": "Grayscale",
-        "value": "1"
-      },
-      {
-        "label": "Grayscale & invert",
-        "value": "2"
-      }
-    ]
-  },
-  {
     "property": "mod.sameerasw_zen_compact_sidebar_type",
     "label": "↔️ Compact sidebar type",
     "type": "dropdown",
     "placeholder": "Select an option",
+    "defaultValue": "0",
     "options": [
+      {
+        "label": "Default",
+        "value": "0"
+      },
       {
         "label": "Push",
         "value": "1"
@@ -139,7 +128,7 @@
   },
   {
     "property": "mod.sameerasw.zen_compact_sidebar_width",
-    "label": "↔️ Custom compact sidebar width (px)",
+    "label": "Custom compact sidebar width",
     "type": "string",
     "defaultValue": "165px",
     "placeholder": "165px (use px)"
