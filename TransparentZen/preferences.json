@@ -101,7 +101,7 @@
     "defaultValue": false
   },
   {
-    "property": "mod.sameerasw.zen_compact_sidebar_type",
+    "property": "mod.sameerasw_zen_compact_sidebar_type",
     "label": "↔️ Compact sidebar type",
     "type": "dropdown",
     "placeholder": "Select an option",
