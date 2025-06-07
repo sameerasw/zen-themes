@@ -132,8 +132,8 @@ tabpanels .browserStack browser {
 
 /* ============= transparent sidebar - use either mask or push ================== */
 :root:has(
-    #mod-sameerasw[mod-sameerasw-zen_compact_sidebar_type="1"],
-    #mod-sameerasw[mod-sameerasw-zen_compact_sidebar_type="2"]
+    [mod-sameerasw-zen_compact_sidebar_type="1"],
+    [mod-sameerasw-zen_compact_sidebar_type="2"]
   ) {
   #zen-main-app-wrapper {
     --zen-sidebar-custom-width: var(
@@ -150,7 +150,7 @@ tabpanels .browserStack browser {
 }
 
 /* mask */
-:root:has(#mod-sameerasw[mod-sameerasw-zen_compact_sidebar_type="1"]) {
+:root:has([mod-sameerasw-zen_compact_sidebar_type="1"]) {
   #titlebar::before {
     box-shadow: light-dark(#fff3, #0003) 0px -36px 30px 0px inset,
       rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
@@ -199,7 +199,7 @@ tabpanels .browserStack browser {
 }
 
 /* push */
-:root:has(#mod-sameerasw[mod-sameerasw-zen_compact_sidebar_type="2"]) {
+:root:has([mod-sameerasw-zen_compact_sidebar_type="2"]) {
   #titlebar::before {
     background-color: transparent !important;
     outline: none !important;
