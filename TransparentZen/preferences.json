@@ -26,16 +26,21 @@
     "placeholder": "light-dark(#fff, #222) or RGBA or hex"
   },
   {
-    "property": "mod.sameerasw.zen_light_tint_flip",
-    "label": "🌙 Flip the light website tint to dark",
-    "type": "checkbox",
-    "defaultValue": false
-  },
-  {
-    "property": "mod.sameerasw.zen_light_tint_disabled",
-    "label": "🌙 Disable the light website tint",
-    "type": "checkbox",
-    "defaultValue": true
+    "property": "mod.sameerasw_zen_light_tint",
+    "label": "🌙 Light website tint",
+    "type": "dropdown",
+    "placeholder": "Select an option",
+    "defaultValue": "2",
+    "options": [
+      {
+        "label": "Flip",
+        "value": "1"
+      },
+      {
+        "label": "Remove",
+        "value": "2"
+      }
+    ]
   },
   {
     "property": "mod.sameerasw.zen_no_shadow",
@@ -101,16 +106,27 @@
     "defaultValue": false
   },
   {
+    "property": "mod.sameerasw_zen_notab_img_filter",
+    "label": "🖼️ No tab screen image filter",
+    "type": "dropdown",
+    "placeholder": "Select an option",
+    "options": [
+      {
+        "label": "Grayscale",
+        "value": "1"
+      },
+      {
+        "label": "Grayscale & invert",
+        "value": "2"
+      }
+    ]
+  },
+  {
     "property": "mod.sameerasw_zen_compact_sidebar_type",
     "label": "↔️ Compact sidebar type",
     "type": "dropdown",
     "placeholder": "Select an option",
-    "defaultValue": "0",
     "options": [
-      {
-        "label": "Default",
-        "value": "0"
-      },
       {
         "label": "Push",
         "value": "1"
@@ -123,7 +139,7 @@
   },
   {
     "property": "mod.sameerasw.zen_compact_sidebar_width",
-    "label": "Custom compact sidebar width",
+    "label": "↔️ Custom compact sidebar width (px)",
     "type": "string",
     "defaultValue": "165px",
     "placeholder": "165px (use px)"

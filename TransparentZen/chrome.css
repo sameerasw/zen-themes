@@ -9,15 +9,20 @@
 }
 
 /* tab tint */
-.browserStack {
-  browser {
-    @media -moz-pref( "mod.sameerasw.zen_light_tint_flip") {
+:root:has([mod-sameerasw_zen_light_tint="1"]) {
+  .browserStack {
+    browser {
       background-color: light-dark(
         rgba(255, 255, 255, 0.1),
         rgba(0, 0, 0, 0.1)
       ) !important;
     }
-    @media -moz-pref( "mod.sameerasw.zen_light_tint_disabled") {
+  }
+}
+
+:root:has([mod-sameerasw_zen_light_tint="2"]) {
+  .browserStack {
+    browser {
       background-color: transparent !important;
     }
   }
@@ -104,6 +109,13 @@ tabpanels .browserStack browser {
 }
 
 /* no tab image */
+:root:has([mod-sameerasw_zen_notab_img_filter="1"]) {
+  --sameerasw_notab_img_filter_property: saturate(0);
+}
+:root:has([mod-sameerasw_zen_notab_img_filter="2"]) {
+  --sameerasw_notab_img_filter_property: saturate(0) invert(1);
+}
+
 #browser:has([zen-empty-tab="true"][selected="true"]) .browserStack {
   @media -moz-pref( "mod.sameerasw.zen_notab_img_enabled") {
     background-image: var(
@@ -118,15 +130,7 @@ tabpanels .browserStack browser {
 
     opacity: var(--mod-sameerasw-zen_notab_img_opacity, 1) !important;
 
-    @media -moz-pref( "mod.sameerasw.zen_notab_img_saturate") {
-      filter: saturate(0) !important;
-
-      @media -moz-pref( "mod.sameerasw.zen_notab_img_invert") {
-        @media (prefers-color-scheme: light) {
-          filter: saturate(0) invert(1) !important;
-        }
-      }
-    }
+    filter: var(--mod-sameerasw-zen_notab_img_filter_property, none) !important;
   }
 }
 
