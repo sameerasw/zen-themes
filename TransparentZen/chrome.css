@@ -198,7 +198,9 @@ tabpanels .browserStack browser {
       [mod-sameerasw_zen_compact_sidebar_type="1"]
     )
     #zen-appcontent-wrapper {
-    transform: translateX(var(--zen-sidebar-custom-width)) !important;
+    transform: translateX(
+      calc(var(--zen-sidebar-custom-width) + 4px)
+    ) !important;
   }
 
   /* Push type - right */
@@ -207,7 +209,7 @@ tabpanels .browserStack browser {
     )
     #zen-appcontent-wrapper {
     transform: translateX(
-      calc(0px - var(--zen-sidebar-custom-width))
+      calc(-4px - var(--zen-sidebar-custom-width))
     ) !important;
   }
 }
