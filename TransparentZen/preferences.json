@@ -55,16 +55,37 @@
     "defaultValue": true
   },
   {
+    "property": "mod.sameerasw.zen_tab_switch_anim_duration",
+    "label": "✨ Tab switch animation duration (s)",
+    "type": "string",
+    "defaultValue": "0.3s",
+    "placeholder": "0.3s"
+  },
+  {
     "property": "mod.sameerasw.zen_urlbar_zoom_anim",
     "label": "✨ URL bar zoom animation",
     "type": "checkbox",
     "defaultValue": false
   },
   {
+    "property": "mod.sameerasw.zen_urlbar_zoom_anim_duration",
+    "label": "✨ URL bar zoom animation duration (s)",
+    "type": "string",
+    "defaultValue": "0.5s",
+    "placeholder": "0.5s"
+  },
+  {
     "property": "mod.sameerasw.zen_trackpad_anim",
     "label": "✨ Trackpad swipe animations",
     "type": "checkbox",
     "defaultValue": false
+  },
+  {
+    "property": "mod.sameerasw.zen_trackpad_anim_duration",
+    "label": "✨ Trackpad swipe animations duration (s)",
+    "type": "string",
+    "defaultValue": "0.3s",
+    "placeholder": "0.3s"
   },
   {
     "property": "mod.sameerasw.zen_notab_img_enabled",
