@@ -41,8 +41,8 @@ hbox.browserSidebarContainer,
 #tabbrowser-tabpanels
   > hbox:not([zen-split="true"]):not(:has(.zen-glance-background)) {
   @media -moz-pref( "mod.sameerasw.zen_tab_switch_anim") {
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.35),
-      filter 0.45s ease-in-out, opacity 0.35s ease-in-out !important;
+    transition: all var(--mod-sameerasw-zen_tab_switch_anim_duration, 0.3s) cubic-bezier(0.175, 0.885, 0.32, 1.35),
+      filter calc(var(--mod-sameerasw-zen_tab_switch_anim_duration, 0.3s) + 0.15s) ease-in-out, opacity calc(var(--mod-sameerasw-zen_tab_switch_anim_duration, 0.3s) + 0.05s) ease-in-out !important;
     scale: 0.9 !important;
     opacity: 0;
   }
@@ -57,7 +57,7 @@ hbox.browserSidebarContainer,
 /* website switch animations */
 #browser:not(:has(.zen-glance-background)) #tabbrowser-tabpanels {
   @media -moz-pref( "mod.sameerasw.zen_urlbar_zoom_anim") {
-    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.35) !important;
+    transition: all var(--mod-sameerasw-zen_urlbar_zoom_anim_duration, 0.5s) cubic-bezier(0.175, 0.885, 0.32, 1.35) !important;
   }
 }
 
@@ -79,7 +79,7 @@ hbox.browserSidebarContainer,
 /* trackpad gestures*/
 tabpanels .browserStack browser {
   @media -moz-pref( "mod.sameerasw.zen_trackpad_anim") {
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.1) 0.1s !important;
+    transition: all var(--mod-sameerasw-zen_trackpad_anim_duration, 0.3s) cubic-bezier(0.175, 0.885, 0.32, 1.1) 0.1s !important;
     border-radius: 0.75em !important;
   }
 }
