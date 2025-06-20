@@ -23,7 +23,8 @@
     "property": "widget.macos.titlebar-blend-mode.behind-window",
     "label": "👀 Allow macOS firefox transparency (TURN OFF BEFORE UNINSTALL)",
     "type": "checkbox",
-    "defaultValue": true
+    "defaultValue": true,
+    "disabledOn": ["windows", "linux"]
   },
   {
     "property": "mod.sameerasw.firefox_transparency_enabled",
