@@ -391,33 +391,36 @@ tabpanels .browserStack browser {
   }
 }
 
-/* firefox transparency */
-:root{
-  --custom-bg: transparent !important;
-  appearance: -moz-sidebar !important;
-}
 
-#navigator-toolbox,
-#browser,
-#nav-bar,
-#PersonalToolbar,
-#notifications-toolbar,
-#tabbrowser-tabpanels{
-  background-color: var(--custom-bg) !important;
-}
-
-#tabbrowser-tabbox,
-#PersonalToolbar,
-#navigator-toolbox{
-  box-shadow: none !important;
-  outline: none !important;
-  border: none !important;
-}
-
-#sidebar-main{
-  transition: background-color 0.15s ease-in-out !important;
-}
-
-#sidebar-main[sidebar-launcher-expanded]{
-  border-radius: 0 1em 1em 0 !important;
+@media -moz-pref( "mod.sameerasw.firefox_transparency_enabled") {
+  /* firefox transparency */
+  :root{
+    --custom-bg: transparent !important;
+    appearance: -moz-sidebar !important;
+  }
+  
+  #navigator-toolbox,
+  #browser,
+  #nav-bar,
+  #PersonalToolbar,
+  #notifications-toolbar,
+  #tabbrowser-tabpanels{
+    background-color: var(--custom-bg) !important;
+  }
+  
+  #tabbrowser-tabbox,
+  #PersonalToolbar,
+  #navigator-toolbox{
+    box-shadow: none !important;
+    outline: none !important;
+    border: none !important;
+  }
+  
+  #sidebar-main{
+    transition: background-color 0.15s ease-in-out !important;
+  }
+  
+  #sidebar-main[sidebar-launcher-expanded]{
+    border-radius: 0 1em 1em 0 !important;
+  }
 }
