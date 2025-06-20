@@ -20,6 +20,18 @@
     "disabledOn": ["windows", "macos"]
   },
   {
+    "property": "widget.macos.titlebar-blend-mode.behind-window",
+    "label": "👀 Allow macOS firefox transparency (TURN OFF BEFORE UNINSTALL)",
+    "type": "checkbox",
+    "defaultValue": true
+  },
+  {
+    "property": "mod.sameerasw.firefox_transparency_enabled",
+    "label": "👀 Transparent firefox",
+    "type": "checkbox",
+    "defaultValue": true
+  },
+  {
     "property": "mod.sameerasw.zen_transparent_sidebar_enabled",
     "label": "👀 Transparent sidebar (bookmarks, history and sync)",
     "type": "checkbox",
