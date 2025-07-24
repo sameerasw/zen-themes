@@ -1,5 +1,5 @@
 # Transparent Zen
-Make the Zen Browser's background transparent allowing the macOS system window blur or Windows mica blur to come through. Known to be supported on macOS, Windows 11, KDE and Hyprland but Windows 10 is not supported while Gnome doesn't have a propper implementation for transparency either.
+Make the Zen Browser's background transparent allowing the macOS system window blur or Windows mica blur to come through. Known to be supported on macOS, Windows 11, KDE and Hyprland but Windows 10 is not supported while Gnome doesn't have a proper implementation for transparency either.
 
 Website specific transparency need to be achieved with the [Zen Internet addon](https://addons.mozilla.org/en-US/firefox/addon/zen-internet/).
 
