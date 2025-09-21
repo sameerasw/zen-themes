@@ -390,3 +390,32 @@ tabpanels .browserStack browser {
   box-shadow: none !important;
   }
 }
+
+/* Custom background */
+@media -moz-pref("mod.sameerasw.zen_bg_img_enabled") {
+  @media -moz-pref("mod.sameerasw.zen_bg_img_not_fullscreen") {
+    #main-window::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background: var(--mod-sameerasw-zen_bg_img) no-repeat center center fixed !important;
+      background-size: cover !important;
+      opacity: var(--mod-sameerasw-zen_bg_opacity, 1) !important;
+      filter: brightness(var(--mod-sameerasw-zen_bg_brightness, 1)) blur(var(--mod-sameerasw-zen_bg_blur, 0)) !important;
+    }
+  }
+  @media (display-mode: fullscreen) {
+      #main-window::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        background: var(--mod-sameerasw-zen_bg_img) no-repeat center center fixed !important;
+        background-size: cover !important;
+        opacity: var(--mod-sameerasw-zen_bg_opacity, 1) !important;
+        filter: brightness(var(--mod-sameerasw-zen_bg_brightness, 1)) blur(var(--mod-sameerasw-zen_bg_blur, 0)) !important;
+      }
+    }
+  }
+}
