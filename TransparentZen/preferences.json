@@ -62,6 +62,46 @@
     "defaultValue": false
   },
   {
+    "property": "mod.sameerasw.zen_bg_img_enabled",
+    "label": "🖼️ Set custom background image",
+    "type": "checkbox",
+    "defaultValue": false
+  },
+  {
+    "property": "mod.sameerasw.zen_bg_img_not_fullscreen",
+    "label": "🖼️ Show background image when not in fullscreen",
+    "type": "checkbox",
+    "defaultValue": false
+  },
+  {
+    "property": "mod.sameerasw.zen_bg_img",
+    "label": "🖼️ Background URL, format:   url('example.com/1.png')",
+    "type": "string",
+    "defaultValue": "https://github.com/sameerasw/zen-themes/blob/main/TransparentZen/image.png?raw=true')",
+    "placeholder": "url('example.com/1.png')"
+  },
+  {
+    "property": "mod.sameerasw.zen_bg_opacity",
+    "label": "🌫️ Background opacity (0–1)",
+    "type": "string",
+    "defaultValue": "0.8",
+    "placeholder": "0.75"
+  },
+  {
+    "property": "mod.sameerasw.zen_bg_brightness",
+    "label": "☀️ Background brightness (0–2)",
+    "type": "string",
+    "defaultValue": "1",
+    "placeholder": "1.2"
+  },
+  {
+    "property": "mod.sameerasw.zen_bg_blur",
+    "label": "💨 Background blur (px)",
+    "type": "string",
+    "defaultValue": "2px",
+    "placeholder": "2px"
+  },
+  {
     "property": "mod.sameerasw.zen_notab_img_enabled",
     "label": "🖼️ Add no tab screen background image",
     "type": "checkbox",
