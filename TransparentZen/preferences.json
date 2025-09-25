@@ -26,6 +26,12 @@
     "defaultValue": true
   },
   {
+    "property": "mod.sameerasw.zen_transparent_glance_enabled",
+    "label": "👀 Transparent glance",
+    "type": "checkbox",
+    "defaultValue": true
+  },
+  {
     "property": "mod.sameerasw.zen_bg_color_enabled",
     "label": "🎨 Enable custom background color for Zen",
     "type": "checkbox",

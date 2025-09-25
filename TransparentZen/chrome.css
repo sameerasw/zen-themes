@@ -386,3 +386,30 @@ tabpanels .browserStack browser {
   box-shadow: none !important;
   }
 }
+
+/* Transparent glance */
+.zen-glance-background > vbox {
+  @media -moz-pref( "mod.sameerasw.zen_transparent_glance_enabled") {
+    mask-image: linear-gradient(
+      to right,
+      black 0%,
+      black 4%,
+      transparent 7%,
+      transparent 93.5%,
+      black 96%,
+      black 100%
+    );
+    mask-repeat: no-repeat;
+    mask-size: 100% 100%;
+  }
+}
+
+.zen-glance-overlay > vbox {
+  @media -moz-pref( "mod.sameerasw.zen_transparent_glance_enabled") {
+    background-color: light-dark(#fff7, #0007) !important;
+    margin-top: 0.5% !important;
+    margin-bottom: 0.5% !important;
+    height: 99% !important;
+    border-radius: 1.5em !important;
+  }
+}
