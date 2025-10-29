@@ -183,7 +183,7 @@ tabpanels .browserStack browser {
     width: var(--zen-sidebar-custom-width) !important;
 
     #titlebar{
-      width: calc(var(--zen-sidebar-width) - var(--zen-toolbox-padding)) !important;
+      width: var(--zen-sidebar-width) !important;
     }
   }
 
