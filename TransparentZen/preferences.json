@@ -94,13 +94,6 @@
     "placeholder": "0.75"
   },
   {
-    "property": "mod.sameerasw.zen_bg_brightness",
-    "label": "🌠 Custom bg image brightness (0–2)",
-    "type": "string",
-    "defaultValue": "1",
-    "placeholder": "1.2"
-  },
-  {
     "property": "mod.sameerasw.zen_bg_blur",
     "label": "🌠 Custom bg image blur (px)",
     "type": "string",
