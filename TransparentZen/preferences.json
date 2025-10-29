@@ -41,7 +41,7 @@
     "property": "mod.sameerasw.zen_transparency_color",
     "label": "🎨 Set custom background color (Overrides theme)",
     "type": "string",
-    "defaultValue": "#00000000",
+    "defaultValue": "light-dark(#fff7, #0007)",
     "placeholder": "light-dark(#fff, #222) or RGBA or hex"
   },
   {
