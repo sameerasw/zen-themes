@@ -180,7 +180,7 @@ tabpanels .browserStack browser {
   [zen-compact-mode="true"] #navigator-toolbox {
     --zen-sidebar-width: var(--zen-sidebar-custom-width) !important;
     --actual-zen-sidebar-width: var(--zen-sidebar-custom-width) !important;
-    width: var(--zen-sidebar-custom-width) !important;
+    width: calc(var(--zen-sidebar-custom-width) - 10px) !important;
   }
 
   #zen-toolbar-background, #zen-toolbar-background::after, .zen-toolbar-background, .zen-toolbar-background::after{
@@ -211,8 +211,8 @@ tabpanels .browserStack browser {
   mask-image: linear-gradient(
     to right,
     transparent 0,
-    transparent calc(var(--zen-sidebar-custom-width) + 10px),
-    black calc(var(--zen-sidebar-custom-width) + 10px),
+    transparent var(--zen-sidebar-custom-width),
+    black var(--zen-sidebar-custom-width),
     black 100%
   ) !important;
 }
@@ -230,8 +230,8 @@ tabpanels .browserStack browser {
   mask-image: linear-gradient(
     to left,
     transparent 0,
-    transparent calc(var(--zen-sidebar-custom-width) + 10px),
-    black calc(var(--zen-sidebar-custom-width) + 10px),
+    transparent var(--zen-sidebar-custom-width),
+    black var(--zen-sidebar-custom-width),
     black 100%
   ) !important;
 }
@@ -246,7 +246,7 @@ tabpanels .browserStack browser {
     [has-popup-menu=""]
   )
   #zen-appcontent-wrapper {
-  transform: translateX(calc(var(--zen-sidebar-custom-width) + 10px)) !important;
+  transform: translateX(var(--zen-sidebar-custom-width)) !important;
 }
 
 /* Push type - right sidebar */
@@ -259,7 +259,7 @@ tabpanels .browserStack browser {
     [has-popup-menu=""]
   )
   #zen-appcontent-wrapper {
-  transform: translateX(calc(0px - var(--zen-sidebar-custom-width) - 10px)) !important;
+  transform: translateX(calc(0px - var(--zen-sidebar-custom-width))) !important;
 }
 
 /* Shared Push Transition (used in both left and right) */
