@@ -77,7 +77,7 @@
     "property": "mod.sameerasw.zen_bg_img",
     "label": "🖼️ Background URL, format:   url('example.com/1.png')",
     "type": "string",
-    "defaultValue": "https://github.com/sameerasw/zen-themes/blob/main/TransparentZen/image.png?raw=true')",
+    "defaultValue": "url('https://github.com/sameerasw/my-internet/blob/main/wallpapers/zen-coral-01.jpeg?raw=true')",
     "placeholder": "url('example.com/1.png')"
   },
   {
