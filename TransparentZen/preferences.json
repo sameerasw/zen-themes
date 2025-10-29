@@ -41,7 +41,7 @@
     "property": "mod.sameerasw.zen_transparency_color",
     "label": "🎨 Set custom background color (Overrides theme)",
     "type": "string",
-    "defaultValue": "light-dark(#fff7, #0007)",
+    "defaultValue": "#00000000",
     "placeholder": "light-dark(#fff, #222) or RGBA or hex"
   },
   {
@@ -101,11 +101,31 @@
     "placeholder": "3px"
   },
   {
-    "property": "mod.sameerasw.zen_notab_img_enabled",
+    "property": "mod.sameerasw_zen_empty_tab_logo",
     "label": "🖼️ Enable empty tab logo",
-    "type": "checkbox",
-    "defaultValue": false
+    "type": "dropdown",
+    "placeholder": "Select an option",
+    "defaultValue": "0",
+    "options": [
+      {
+        "label": "Disabled",
+        "value": "0"
+      },
+      {
+        "label": "Enabled",
+        "value": "1"
+      },
+      {
+        "label": "Enabled - grayscale",
+        "value": "2"
+      },
+      {
+        "label": "Enabled - grayscale, inverted",
+        "value": "3"
+      }
+    ]
   },
+
   {
     "property": "mod.sameerasw.zen_notab_img",
     "label": "🖼️ Empty tab logo URL",
@@ -126,18 +146,6 @@
     "type": "string",
     "defaultValue": "1",
     "placeholder": "0.75"
-  },
-  {
-    "property": "mod.sameerasw.zen_notab_img_saturate",
-    "label": "🖼️ Empty tab logo - grayscale",
-    "type": "checkbox",
-    "defaultValue": false
-  },
-  {
-    "property": "mod.sameerasw.zen_notab_img_invert",
-    "label": "🖼️ Empty tab logo - flip grayscale color",
-    "type": "checkbox",
-    "defaultValue": false
   },
   {
     "property": "mod.sameerasw_zen_compact_sidebar_type",
