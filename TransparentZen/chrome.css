@@ -477,3 +477,12 @@ tabpanels .browserStack browser {
     }
   }
 }
+
+/* glance rounded corners fix */
+.zen-glance-overlay > .browserContainer > .browserStack{
+  @media -moz-pref( "mod.sameerasw.zen_transparent_glance_enabled") {
+    border-radius: 1.5em !important;
+    overflow: hidden !important;
+  }
+}
+
