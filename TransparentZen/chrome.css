@@ -144,7 +144,7 @@ tabpanels .browserStack browser {
     [mod-sameerasw_zen_empty_tab_logo="2"],
     [mod-sameerasw_zen_empty_tab_logo="3"]
   ) {
-  #browser:has([zen-empty-tab="true"][selected="true"]) .browserStack {
+  #browser:has(toolbox[zen-has-empty-tab=""]) .browserStack {
       background-image: var(
         --mod-sameerasw-zen_notab_img,
         url("https://raw.githubusercontent.com/zen-browser/branding/refs/heads/main/Official/Word%20Marks/SVG/zen_logo_icon_white.svg")
